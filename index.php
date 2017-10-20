@@ -13,10 +13,11 @@
         $path = '/src/' . $path;
     }else if(count($pathArr) == 1){
         $path = '/src/dashboard/' . $path;
-    }else{
-        $path = '/src/dashboard/index';
     }
+  }else{
+    $path = '/src/dashboard/index';
+  }
     include $path . '.html';
 
-  }
+
 ?>

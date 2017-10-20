@@ -21,6 +21,7 @@
     "jquery.cookie": "^1.4.1",
     "nprogress": "^0.2.0",
     "region": "^2.1.2",
+    "requirejs": "^2.3.5",
     "uploadify": "^1.0.7"
   }
 }
