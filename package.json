@@ -1,0 +1,26 @@
+{
+  "name": "bxg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "art-template": "^4.12.2",
+    "bootstrap": "^3.3.7",
+    "bootstrap-datepicker": "^1.7.1",
+    "ckeditor": "^4.7.3",
+    "echarts": "^3.7.2",
+    "font-awesome": "^4.7.0",
+    "jcrop": "0.0.1",
+    "jquery": "^3.2.1",
+    "jquery-form": "^4.2.2",
+    "jquery.cookie": "^1.4.1",
+    "nprogress": "^0.2.0",
+    "region": "^2.1.2",
+    "uploadify": "^1.0.7"
+  }
+}
