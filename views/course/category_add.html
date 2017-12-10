@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学IT - 后台管理系统</title>
+    <?php include '/views/common/css.html'?>
+</head>
+<body>
+    
+    <!-- 侧边栏 -->
+    <?php include '/views/common/aside.html'?>
+    <!-- 主体 -->
+    <div class="main">
+        <div class="container-fluid">
+            <!-- 头部 -->
+            <?php include '/views/common/header.html'?>
+            <div class="body course-category">
+                <!-- 面包屑 -->
+                <ol class="breadcrumb">
+                    <li><a href="javascript:;">课程管理</a></li>
+                    <li class="active">课程分类</li>
+                </ol>
+                <div class="category-add">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <?php include '/views/common/script.html'?>
+</body>
+</html>
+<script type="text/template" id="cg_add_tpl">
+    <form action="" class="form-horizontal">
+        <div class="form-group">
+            <label for="" class="col-md-4 control-label">名称</label>
+            <div class="col-md-3">
+                <input type="text" name="cg_name" value="{{cg_name}}" class="form-control input-sm" placeholder="填写分类名称">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="" class="col-md-4 control-label">级别</label>
+            <div class="col-md-2">
+                <select name="" class="form-control input-sm">
+                    {{each top as v k}}
+                    <option value="">{{v.cg_name}}</option>
+                    {{/each}}
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="" class="col-md-4 control-label">排序</label>
+            <div class="col-md-1">
+                <input type="text" class="form-control input-sm" value="{{cg_order}}">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="" class="col-md-4 control-label">是否显示</label>
+            <div class="col-md-3">
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="0" {{if cg_is_hide==0}}checked{{/if}}> 是
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="1" {{if cg_is_hide==1}}checked{{/if}}> 否
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-8">
+                <button class="btn-save btn btn-success btn-sm pull-right">保存</button>
+            </div>
+        </div>
+    </form>
+</script>
+<script>
+    require(['js/course/category_add']);
+</script>
